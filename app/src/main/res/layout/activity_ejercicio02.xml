@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".Ejercicio02">
+
+    <EditText
+        android:id="@+id/etNombreCliente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Nombre Cliente"
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"/>
+
+    <EditText
+        android:id="@+id/etNumeroCliente"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Número Cliente"
+        android:inputType="phone"
+        app:layout_constraintTop_toBottomOf="@id/etNombreCliente"
+        app:layout_constraintStart_toStartOf="@id/etNombreCliente"
+        app:layout_constraintEnd_toEndOf="@id/etNombreCliente"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/etProductos"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Productos"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/etNumeroCliente"
+        app:layout_constraintStart_toStartOf="@id/etNombreCliente"
+        app:layout_constraintEnd_toEndOf="@id/etNombreCliente"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/etCiudad"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Ciudad"
+        android:inputType="text"
+        app:layout_constraintTop_toBottomOf="@id/etProductos"
+        app:layout_constraintStart_toStartOf="@id/etNombreCliente"
+        app:layout_constraintEnd_toEndOf="@id/etNombreCliente"
+        android:layout_marginTop="8dp"/>
+
+    <EditText
+        android:id="@+id/etDireccion"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:hint="Dirección"
+        android:inputType="textPostalAddress"
+        app:layout_constraintTop_toBottomOf="@id/etCiudad"
+        app:layout_constraintStart_toStartOf="@id/etNombreCliente"
+        app:layout_constraintEnd_toEndOf="@id/etNombreCliente"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/btnRegistrar"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="Registrar"
+        app:layout_constraintTop_toBottomOf="@id/etDireccion"
+        app:layout_constraintStart_toStartOf="@id/etNombreCliente"
+        app:layout_constraintEnd_toEndOf="@id/etNombreCliente"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:layout_marginTop="16dp"
+        android:layout_marginBottom="16dp"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
